@@ -1,0 +1,89 @@
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.build/
+.buildlog/
+.history
+.svn/
+.swiftpm/
+migrate_working_dir/
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# The .vscode folder contains launch configuration and tasks you configure in
+# VS Code which you may wish to be included in version control, so this line
+# is commented out by default.
+#.vscode/
+
+# Flutter/Dart/Pub related
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+/build/
+/coverage/
+
+# Symbolication related
+app.*.symbols
+
+# Obfuscation related
+app.*.map.json
+
+# Android Studio will place build artifacts here
+/android/app/debug
+/android/app/profile
+/android/app/release
+
+# Local API secrets
+.env
+.env.*
+!.env.example
+
+# Backend runtime artifacts
+__pycache__/
+backend/storage/
+
+# 23Editor: personal media, renders, and temp copies. The backend keeps
+# uploads/renders/assets under backend/storage/ (ignored above); these
+# patterns catch strays anywhere else. Fail-closed for privacy: to
+# commit a legitimate image (docs, demo art), force-add it explicitly
+# with `git add -f`. .env.example stays committed.
+*.mp4
+*.mov
+*.mkv
+*.webm
+*.wav
+*.mp3
+*.m4a
+*.png
+*.jpg
+*.jpeg
+*.webp
+!/assets/**
+!/android/**
+
+# Local VCS/tooling remnants (never committed)
+.hg/
+.sl/
+.eden/
+.agents/
+.muse/
+
+# Gradle / Android local outputs
+**/build/
+.gradle/
+local.properties
+
+# Runtime verification markers and IDE module files (local state)
+backend/23editor-*/
+android/**/*.iml
